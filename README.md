@@ -9,7 +9,7 @@ This theme updates Jellyfin’s interface by replacing Google's Material Icons w
 You can install this theme by pasting the following code into the custom CSS box:
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/KartoffelChipss/Jellyfin-Lucide@latest/theme/jellyfin-lucide.css");
+@import url("https://cdn.jsdelivr.net/gh/KartoffelChipss/Jellyfin-Lucide@main/theme/jellyfin-lucide.css");
 ```
 
 > [!IMPORTANT]  
