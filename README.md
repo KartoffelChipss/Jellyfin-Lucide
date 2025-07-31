@@ -12,6 +12,9 @@ You can install this theme by pasting the following code into the custom CSS box
 @import url("https://cdn.jsdelivr.net/gh/KartoffelChipss/Jellyfin-Lucide@latest/theme/jellyfin-lucide.css");
 ```
 
+> [!IMPORTANT]  
+> Please make sure to place this **BELOW** any other theme to ensure the right icons are used!
+
 <details>
   <summary><strong>Detailed steps for server-side implementation (Theme is applied to everyone)</strong></summary>
 
