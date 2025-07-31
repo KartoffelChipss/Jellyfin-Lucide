@@ -63,11 +63,15 @@
     "save": "save",
     "volume_off": "volume-off",
     "close": "x",
+    "cancel": "x",
     "live_tv": "tv",
     "person": "user",
     "phonelink_lock": "message-square-lock",
     "play_circle_filled": "circle-play",
     "keyboard": "keyboard",
     "share": "share-2",
-    "video_library": "library-big"
+    "video_library": "library-big",
+    "undo": "undo-2",
+    "redo": "redo-2",
+    "audiotrack": "audio-lines"
 }
