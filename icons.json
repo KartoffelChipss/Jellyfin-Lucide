@@ -57,6 +57,7 @@
     "album": "disc-album",
     "pause_circle_filled": "circle-pause",
     "fast_forward_30": "fast-forward",
+    "forward_30": "fast-forward",
     "replay_10": "rewind",
     "repeat": "repeat",
     "remove_circle_outline": "circle-minus",
@@ -73,5 +74,6 @@
     "video_library": "library-big",
     "undo": "undo-2",
     "redo": "redo-2",
-    "audiotrack": "audio-lines"
+    "audiotrack": "audio-lines",
+    "drag_handle": "grip-horizontal"
 }
