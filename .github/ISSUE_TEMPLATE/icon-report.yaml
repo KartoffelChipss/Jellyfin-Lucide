@@ -1,0 +1,106 @@
+name: "Missing or Wrong Icon"
+description: Report a missing or incorrect icon in Jellyfin
+title: "[Icon] <Short description of the issue>"
+labels: [bug, ui, icons]
+body:
+    - type: markdown
+      attributes:
+          value: |
+              ## 🖼️ Icon Display Issue
+
+              Please fill out the following form to help us identify and fix missing or incorrect icons.
+
+    - type: checkboxes
+      id: theme-order-confirmation
+      attributes:
+          label: Theme Order Confirmation
+          description: To ensure proper icon loading, confirm the order of theme imports.
+          options:
+              - label: I have made sure to place the Jellyfin-Lucide code snippet **below** any other themes in the custom CSS section
+          required: true
+
+    - type: input
+      id: location
+      attributes:
+          label: Where did you notice the issue?
+          description: Describe where in the UI the icon is missing or incorrect (e.g., "Settings > Dashboard", "Library > Movies > Item menu", etc.).
+          placeholder: e.g., Playback Settings page, library context menu
+      validations:
+          required: true
+
+    - type: textarea
+      id: description
+      attributes:
+          label: What’s wrong with the icon?
+          description: Describe the issue (e.g., missing icon, wrong icon shown, icon doesn't match theme, etc.).
+          placeholder: The icon for the 'Download' option is missing from the context menu.
+      validations:
+          required: true
+
+    - type: textarea
+      id: steps
+      attributes:
+          label: How to reproduce the issue
+          description: Provide clear steps to reproduce the issue so developers can verify it.
+          placeholder: |
+              1. Go to the Movies library
+              2. Right-click on any movie
+              3. Observe the missing or incorrect icon in the context menu
+      validations:
+          required: true
+
+    - type: input
+      id: icon-name
+      attributes:
+          label: (Optional) Suspected icon name or class
+          description: If you know the icon's name (e.g., from inspecting the HTML or dev tools), include it here.
+          placeholder: e.g., `mode_edit`, `play`
+      validations:
+          required: false
+
+    - type: markdown
+      attributes:
+          value: |
+              ### 📸 Screenshots (Highly Recommended)
+
+              Screenshots help us understand the problem faster. Please include before/after comparisons if applicable.
+
+    - type: textarea
+      id: screenshots
+      attributes:
+          label: Screenshots
+          description: Drag and drop screenshots here or paste images inline.
+          placeholder: Include images showing the problem area
+      validations:
+          required: false
+
+    - type: dropdown
+      id: theme
+      attributes:
+          label: Which theme are you using?
+          description: Different themes may render icons differently.
+          options:
+              - Default (Light)
+              - Default (Dark)
+              - Custom theme (explain in Additional Info)
+          default: 0
+      validations:
+          required: true
+
+    - type: input
+      id: version
+      attributes:
+          label: Jellyfin version
+          description: Include the version number of the Jellyfin server where you noticed the issue.
+          placeholder: e.g., 10.9.1
+      validations:
+          required: true
+
+    - type: textarea
+      id: additional
+      attributes:
+          label: Additional Info
+          description: Any other context, browser details, plugins, or logs that might help us diagnose the issue.
+          placeholder: Using Firefox on Linux; issue only appears with custom themes.
+      validations:
+          required: false
