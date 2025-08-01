@@ -17,7 +17,7 @@ body:
           description: To ensure proper icon loading, confirm the order of theme imports.
           options:
               - label: I have made sure to place the Jellyfin-Lucide code snippet **below** any other themes in the custom CSS section
-          required: true
+                required: true
 
     - type: input
       id: location
