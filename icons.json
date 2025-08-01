@@ -47,6 +47,7 @@
     "refresh": "rotate-ccw",
     "cloud_download": "cloud-download",
     "arrow_back": "arrow-left",
+    "arrow_forward": "arrow-right",
     "folder": "folder",
     "explore": "compass",
     "stop": "square",
@@ -75,5 +76,11 @@
     "undo": "undo-2",
     "redo": "redo-2",
     "audiotrack": "audio-lines",
-    "drag_handle": "grip-horizontal"
+    "drag_handle": "grip-horizontal",
+    "library_add_check": "square-mouse-pointer",
+    "expand_more": "chevron-down",
+    "call_merge": "merge",
+    "check_box": "square-check",
+    "check_box_outline_blank": "square",
+    "select_all": "grid-2x2-check"
 }
