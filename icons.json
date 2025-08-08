@@ -15,6 +15,7 @@
     "exit_to_app": "log-out",
     "computer": "laptop",
     "add": "plus",
+    "add_circle": "circle-plus",
     "view_comfy": "grid-2x2",
     "shuffle": "shuffle",
     "sort_by_alpha": "arrow-down-up",
@@ -42,6 +43,7 @@
     "delete": "trash-2",
     "edit": "pen",
     "image": "image",
+    "photo": "image",
     "closed_caption": "closed-caption",
     "info": "info",
     "refresh": "rotate-ccw",
@@ -69,6 +71,7 @@
     "live_tv": "tv",
     "person": "user",
     "phonelink_lock": "message-square-lock",
+    "lock": "lock",
     "play_circle_filled": "circle-play",
     "keyboard": "keyboard",
     "share": "share-2",
@@ -84,5 +87,7 @@
     "check_box_outline_blank": "square",
     "select_all": "grid-2x2-check",
     "keyboard_arrow_up": "chevron-up",
-    "folder_open": "folder-open"
+    "folder_open": "folder-open",
+    "notifications": "bell",
+    "message": "send"
 }
