@@ -82,5 +82,7 @@
     "call_merge": "merge",
     "check_box": "square-check",
     "check_box_outline_blank": "square",
-    "select_all": "grid-2x2-check"
+    "select_all": "grid-2x2-check",
+    "keyboard_arrow_up": "chevron-up",
+    "folder_open": "folder-open"
 }
