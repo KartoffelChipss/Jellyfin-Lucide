@@ -14,7 +14,8 @@ const LUCIDE_CSS_URL = 'https://unpkg.com/lucide-static@0.535.0/font/lucide.css'
 
 const GENERATED_CSS_PATH = path.join(__dirname, 'theme', 'jellyfin-lucide.css');
 
-const MAIN_CONTENT = `/* Jellyfin Lucide Icons Theme by KartoffelChipss */\n` +
+const MAIN_CONTENT =
+    `/* Jellyfin Lucide Icons Theme by KartoffelChipss */\n` +
     `/* using lucide Icons licensed under the ISC License: https://lucide.dev/license */\n` +
     `@import url("${LUCIDE_CSS_URL}");` +
     '.material-icons{' +
@@ -23,7 +24,18 @@ const MAIN_CONTENT = `/* Jellyfin Lucide Icons Theme by KartoffelChipss */\n` +
     'white-space:nowrap;direction:ltr;-webkit-font-smoothing:antialiased;' +
     'text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;' +
     'font-feature-settings:"liga"}button .material-icon{margin-top:3px}' +
-    '.btnPlay.detailButton .detailButton-content span.material-icons{margin-right:3px}';
+    '.btnPlay.detailButton .detailButton-content span.material-icons{margin-right:3px} ' +
+    '.play-button:before{content:"\\e140";font-family:lucide!important;} ' +
+    '.favorite-button{color:inherit;} ' +
+    '.favorite-button.favorited{color: red;} ' +
+    '.favorite-button:before{content:"\\e0f6";font-family:lucide!important;} ' +
+    '.favorite-button.favorited:before{content:"\\e0f6";font-family:lucide!important;} ' +
+    '.detailButton.detail-button{margin: 0!important;background: buttonface!important;color:inherit!important;} ' +
+    '.detailButton.detail-button:before{content:"\\e0ff";font-family:lucide!important;} ' +
+    '.arrow.right-arrow i{display:none;} ' +
+    '.arrow.right-arrow:before{content:"\\e073";font-family:lucide!important;font-size: 50px;} ' +
+    '.arrow.left-arrow i{display:none;} ' +
+    '.arrow.left-arrow:before{content:"\\e072";font-family:lucide!important;font-size: 50px;} ';
 
 function ensureDirectoryExists(dirPath) {
     if (!fs.existsSync(dirPath)) {
@@ -40,19 +52,21 @@ function ensureDirectoryExists(dirPath) {
 function fetchAndSaveCSS(url, localPath) {
     return new Promise((resolve, reject) => {
         console.log('🌐 Downloading Lucide CSS...');
-        https.get(url, (res) => {
-            if (res.statusCode !== 200) {
-                return reject(new Error(`Failed to download CSS: ${res.statusCode}`));
-            }
+        https
+            .get(url, (res) => {
+                if (res.statusCode !== 200) {
+                    return reject(new Error(`Failed to download CSS: ${res.statusCode}`));
+                }
 
-            let data = '';
-            res.on('data', chunk => data += chunk);
-            res.on('end', () => {
-                fs.writeFileSync(localPath, data, 'utf8');
-                console.log(`✅ Saved Lucide CSS to ${localPath}`);
-                resolve(data);
-            });
-        }).on('error', reject);
+                let data = '';
+                res.on('data', (chunk) => (data += chunk));
+                res.on('end', () => {
+                    fs.writeFileSync(localPath, data, 'utf8');
+                    console.log(`✅ Saved Lucide CSS to ${localPath}`);
+                    resolve(data);
+                });
+            })
+            .on('error', reject);
     });
 }
 
@@ -93,7 +107,7 @@ function parseLucideCSS(css) {
  * Generates the final CSS content based on the provided mapping and icon codes.
  * @param {Object} mapping - The mapping of icon names to Lucide names.
  * @param {Object} iconMap - The mapping of Lucide names to their Unicode codes.
- * @returns 
+ * @returns
  */
 function generateCSS(mapping, iconMap) {
     let result = MAIN_CONTENT;
