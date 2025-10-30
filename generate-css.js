@@ -24,6 +24,7 @@ const MAIN_CONTENT =
     'white-space:nowrap;direction:ltr;-webkit-font-smoothing:antialiased;' +
     'text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;' +
     'font-feature-settings:"liga"}button .material-icon{margin-top:3px}' +
+    '.material-icons.info_outline:before{font-family:lucide!important;}' +
     '.btnPlay.detailButton .detailButton-content span.material-icons{margin-right:3px} ' +
     '.play-button:before{content:"\\e140";font-family:lucide!important;} ' +
     '.favorite-button{color:inherit;} ' +
