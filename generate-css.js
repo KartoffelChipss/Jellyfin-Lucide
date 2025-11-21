@@ -36,7 +36,8 @@ const MAIN_CONTENT =
     '.arrow.right-arrow i{display:none;} ' +
     '.arrow.right-arrow:before{content:"\\e073";font-family:lucide!important;font-size: 50px;} ' +
     '.arrow.left-arrow i{display:none;} ' +
-    '.arrow.left-arrow:before{content:"\\e072";font-family:lucide!important;font-size: 50px;} ';
+    '.arrow.left-arrow:before{content:"\\e072";font-family:lucide!important;font-size: 50px;} ' +
+    '.material-icons:not(:empty) {font-family: "Material Icons" !important;} ';
 
 function ensureDirectoryExists(dirPath) {
     if (!fs.existsSync(dirPath)) {
