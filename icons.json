@@ -91,5 +91,6 @@
     "notifications": "bell",
     "message": "send",
     "fiber_manual_record": "circle-small",
-    "build": "wrench"
+    "build": "wrench",
+    "watchlist": "bookmark"
 }
