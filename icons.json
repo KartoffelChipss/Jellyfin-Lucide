@@ -90,5 +90,6 @@
     "folder_open": "folder-open",
     "notifications": "bell",
     "message": "send",
-    "fiber_manual_record": "circle-small"
+    "fiber_manual_record": "circle-small",
+    "build": "wrench"
 }
