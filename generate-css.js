@@ -27,6 +27,9 @@ const MAIN_CONTENT =
     '.material-icons.info_outline:before{font-family:lucide!important;}' +
     '.btnPlay.detailButton .detailButton-content span.material-icons{margin-right:3px} ' +
     '.play-button:before{content:"\\e140";font-family:lucide!important;} ' +
+    '.watchlist-button{color:inherit;} ' +
+    '.watchlist-button:before{content:"\\e064"!important;font-family:lucide!important;} ' +
+    '.watchlist-button:hover{opacity:0.9;} ' +
     '.favorite-button{color:inherit;} ' +
     '.favorite-button.favorited{color: red;} ' +
     '.favorite-button:before{content:"\\e0f6";font-family:lucide!important;} ' +
