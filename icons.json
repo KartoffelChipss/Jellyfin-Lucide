@@ -92,5 +92,17 @@
     "message": "send",
     "fiber_manual_record": "circle-small",
     "build": "wrench",
-    "watchlist": "bookmark"
+    "watchlist": "bookmark",
+    "import_export": "arrow-up-down",
+    "view_module": "layout-grid",
+    "view_list": "list",
+    "sort": "arrow-down-narrow-wide",
+    "arrow_drop_down": "chevron-down",
+    "check_circle": "circle-check",
+    "schedule": "clock",
+    "play_circle": "play",
+    "check_circle_outline": "circle-check",
+    "star": "star",
+    "list": "list",
+    "favorite_border": "heart"
 }
