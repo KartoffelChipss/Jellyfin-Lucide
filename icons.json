@@ -93,6 +93,7 @@
     "fiber_manual_record": "circle-small",
     "build": "wrench",
     "watchlist": "bookmark",
+    "bookmark": "bookmark",
     "import_export": "arrow-up-down",
     "view_module": "layout-grid",
     "view_list": "list",
